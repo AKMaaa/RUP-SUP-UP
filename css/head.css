@@ -1,0 +1,121 @@
+header {
+    background-color: #333333;
+    padding-bottom: 8px;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+
+/* チェックボックスを非表示にする */
+.drawer_hidden {
+    display: none;
+}
+
+/* ハンバーガーアイコンの設置スペース */
+.drawer_open {
+    display: flex;
+    height: 10vw;
+    width: 10vw;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+    /* 重なり順を一番上にする */
+    cursor: pointer;
+}
+
+/* ハンバーガーメニューのアイコン */
+.drawer_open span,
+.drawer_open span:before,
+.drawer_open span:after {
+    content: '';
+    display: block;
+    height: 0.7vw;
+    width: 9vw;
+    border-radius: 3px;
+    background: rgb(255, 255, 255);
+    transition: 0.5s;
+    position: absolute;
+}
+
+/* 三本線の一番上の棒の位置調整 */
+.drawer_open span:before {
+    bottom: 10px;
+}
+
+/* 三本線の一番下の棒の位置調整 */
+.drawer_open span:after {
+    top: 10px;
+}
+
+/* アイコンがクリックされたら真ん中の線を透明にする */
+#drawer_input:checked~.drawer_open span {
+    background: rgba(255, 255, 255, 0);
+}
+
+/* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+#drawer_input:checked~.drawer_open span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+
+#drawer_input:checked~.drawer_open span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+
+/* メニューのデザイン*/
+.nav_content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0%;
+    right: 100%;
+    /* メニューを画面の外に飛ばす */
+    z-index: 99;
+    background: #333333;
+    transition: .5s;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* アイコンがクリックされたらメニューを表示 */
+#drawer_input:checked~.nav_content {
+    right: 0;
+}
+
+/* メニュー黒ポチを消す */
+.nav_list {
+    list-style: none;
+}
+
+.flex_head{
+    display: flex;
+}
+
+#back > img{
+    height: 8vw;
+    width: 8vw;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+#back{
+    margin-left: 5vw;
+    margin-top: 6vw;
+}
+
+.nav{
+    margin-left: auto;
+    margin-right: 5vw;
+    margin-top: 5vw;
+}
+
+#search_window > img{
+    display: block;
+    width: 90vw;
+    margin: 4vw auto;
+}

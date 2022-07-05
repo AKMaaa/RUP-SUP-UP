@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="japanese">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/head.css">
+    <link rel="stylesheet" href="css/UI_bottom.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <title>HI演習 G6</title>
+</head>
+
+<body>
+    <header>
+        <div class="flex_head">
+            <div id="back">
+                <img src="images/back.svg" alt="戻るボタン">
+            </div>
+            <!-- ハンバーガーメニュー部分 -->
+            <div class="nav">
+                <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+                <input id="drawer_input" class="drawer_hidden" type="checkbox">
+
+                <!-- ハンバーガーアイコン -->
+                <label for="drawer_input" class="drawer_open"><span></span></label>
+
+                <!-- メニュー -->
+                <nav class="nav_content">
+                    <ul class="nav_list">
+                        <li class="nav_item"><a href="">メニュー1</a></li>
+                        <li class="nav_item"><a href="">メニュー2</a></li>
+                        <li class="nav_item"><a href="">メニュー3</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id="search_window">
+            <img src="images/検索窓.svg" alt="検索窓">
+        </div>
+    </header>
+    <div class="UI_bottom">
+        <img src="images/通知.svg" alt="通知">
+        <img src="images/Like.svg" alt="いいね" width="22.37px">
+        <img src="images/home_on.svg" alt="ホーム">
+        <img src="images/discover.svg" alt="発見">
+        <img src="images/Profile.svg" alt="プロフィール">
+    </div>
+    <main>
+        <div>
+            <p class="tag_text">応援しているラッパー</p>
+            <div class="rank_rapper_pa">
+                <div class="rank_rapper">
+                    <img src="images/IO.png" alt="IO">
+                    <p class="rank_name_rapper">IO</p>
+                    <p class="rank_point_rapper">100 pt</p>
+                </div>
+                <div class="rank_rapper">
+                    <img src="images/R-指定.png" alt="R-指定">
+                    <p class="rank_name_rapper">R-指定</p>
+                    <p class="rank_point_rapper">50 pt</p>
+                </div>
+                <div class="rank_rapper">
+                    <img src="images/Awich.png" alt="Awich">
+                    <p class="rank_name_rapper">Awich</p>
+                    <p class="rank_point_rapper">20 pt</p>
+                </div>
+            </div>
+            <p class="tag_text" id="Diamond_tag">ダイヤ</p>
+            <div class="rank_rapper_pa">
+                <div class="rank_rapper">
+                    <img src="images/R-指定.png" alt="R指定">
+                    <p class="rank_name_rapper">R-指定</p>
+                    <p class="rank_point_rapper">6000 pt</p>
+                </div>
+                <div class="rank_rapper">
+                    <img src="images/IO.png" alt="IO">
+                    <p class="rank_name_rapper">IO</p>
+                    <p class="rank_point_rapper">5500 pt</p>
+                </div>
+                <div class="rank_rapper">
+                    <img src="images/Awich.png" alt="Awich">
+                    <p class="rank_name_rapper">Awich</p>
+                    <p class="rank_point_rapper">5200 pt</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p class="tag_text">#おすすめ</p>
+            <div class="video_rapper_pa">
+                <div class="video_rapper">
+                    <img src="images/R-指定_動画.png" alt="R-指定">
+                    <img class="mini_icon" src="images/R-指定_icon_mini.png" alt="R-指定">
+                </div>
+                <div class="video_rapper">
+                    <img src="images/T-pablow_動画.png" alt="T-pablow">
+                    <img class="mini_icon" src="images/T-pablow_icon_mini.png" alt="T-pablow">
+                </div>
+                <div class="video_rapper">
+                    <img src="images/Awich_動画.png" alt="Awich">
+                    <img class="mini_icon" src="images/Awich_icon_mini.png" alt="Awich">
+                </div>
+                <div class="video_rapper">
+                    <img src="images/R-指定_動画.png" alt="R-指定">
+                    <img class="mini_icon" src="images/R-指定_icon_mini.png" alt="R-指定">
+                </div>
+                <div class="video_rapper">
+                    <img src="images/T-pablow_動画.png" alt="T-pablow">
+                    <img class="mini_icon" src="images/T-pablow_icon_mini.png" alt="T-pablow">
+                </div>
+                <div class="video_rapper">
+                    <img src="images/Awich_動画.png" alt="Awich">
+                    <img class="mini_icon" src="images/Awich_icon_mini.png" alt="Awich">
+                </div>
+                <div class="video_rapper">
+                    <img src="images/R-指定_動画.png" alt="R-指定">
+                    <img class="mini_icon" src="images/R-指定_icon_mini.png" alt="R-指定">
+                </div>
+                <div class="video_rapper">
+                    <img src="images/T-pablow_動画.png" alt="T-pablow">
+                    <img class="mini_icon" src="images/T-pablow_icon_mini.png" alt="T-pablow">
+                </div>
+                <div class="video_rapper">
+                    <img src="images/Awich_動画.png" alt="Awich">
+                    <img class="mini_icon" src="images/Awich_icon_mini.png" alt="Awich">
+                </div>
+            </div>
+        </div>
+        <div>
+            <p class="tag_text">#フリースタイル</p>
+            <div class="video_rapper_pa">
+                <div class="video_rapper">
+                    <img src="images/R-指定_動画.png" alt="R-指定">
+                </div>
+                <div class="video_rapper">
+                    <img src="images/T-pablow_動画.png" alt="T-pablow">
+                </div>
+                <div class="video_rapper">
+                    <img src="images/Awich_動画.png" alt="Awich">
+                </div>
+            </div>
+        </div>
+        <div class="bottom_space">
+        </div>
+    </main>
+    <script type="text/javascript" src="script/script.js"></script>
+</body>
+
+</html>

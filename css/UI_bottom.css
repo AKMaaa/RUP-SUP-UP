@@ -1,0 +1,22 @@
+.UI_bottom {
+    position: fixed;
+    width: 90vw;
+    height: 8vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 90vh;
+    border-radius: 15px;
+    box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, .2);
+    border: solid 0.2px rgba(0, 0, 0, .08);
+    display:flex;
+    z-index: 1000;
+    background: #fff;
+}
+
+.UI_bottom > img{
+    display: block;
+    margin: 3vw auto;
+    z-index: 2000;
+    width: 100%;
+}

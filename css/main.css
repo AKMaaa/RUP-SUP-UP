@@ -1,0 +1,46 @@
+main{
+    z-index: -1;
+    display:block;
+    position: absolute;
+    width: 90vw;
+    left: 0;
+    right: 0;
+    margin:auto;
+}
+
+.rank_rapper_pa{
+    display: flex;
+    width: 90vw;
+    height: 240px;
+    overflow-x: scroll;
+}
+
+.rank_rapper_pa div{
+    width: 40%;
+    margin: 5px;
+    flex-shrink: 0;
+}
+
+#Diamond_tag{
+    color: rgb(54, 150, 179);
+}
+
+.video_rapper_pa{
+    display: flex;
+    width: 90vw;
+    height: 298px;
+    overflow-x: scroll;
+}
+
+.video_rapper_pa div{
+    width: 40%;
+    margin: 5px;
+    flex-shrink: 0;
+}
+
+.mini_icon{
+    position: relative;
+    left: 46px;
+    bottom: 30px;
+    width: 12vw;
+}
