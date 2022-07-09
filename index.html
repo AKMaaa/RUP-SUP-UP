@@ -52,26 +52,36 @@
         <img src="images/Profile.svg" alt="プロフィール">
     </div>
     <main>
-        <div>
-            <p class="tag_text">応援しているラッパー</p>
-            <div class="rank_rapper_pa">
-                <div class="rank_rapper">
-                    <img src="images/IO.png" alt="IO">
-                    <p class="rank_name_rapper">IO</p>
-                    <p class="rank_point_rapper">100 pt</p>
-                </div>
-                <div class="rank_rapper">
-                    <img src="images/R-指定.png" alt="R-指定">
-                    <p class="rank_name_rapper">R-指定</p>
-                    <p class="rank_point_rapper">50 pt</p>
-                </div>
-                <div class="rank_rapper">
-                    <img src="images/Awich.png" alt="Awich">
-                    <p class="rank_name_rapper">Awich</p>
-                    <p class="rank_point_rapper">20 pt</p>
-                </div>
+        <p class="tag_text">応援しているラッパー</p>
+        <div class="rank_rapper_pa">
+            <div class="rank_rapper">
+                <img src="images/IO.png" alt="IO">
+                <p class="rank_name_rapper">IO</p>
+                <p class="rank_point_rapper">100 pt</p>
             </div>
-            <p class="tag_text" id="Diamond_tag">ダイヤ</p>
+            <div class="rank_rapper">
+                <img src="images/R-指定.png" alt="R-指定">
+                <p class="rank_name_rapper">R-指定</p>
+                <p class="rank_point_rapper">50 pt</p>
+            </div>
+            <div class="rank_rapper">
+                <img src="images/Awich.png" alt="Awich">
+                <p class="rank_name_rapper">Awich</p>
+                <p class="rank_point_rapper">20 pt</p>
+            </div>
+        </div>
+
+        <!--クラス選択-->
+        <div class="select">
+            <span class="placeholder">ダイヤ</span>
+            <ul>
+                <li data-value="ダイヤ">ダイヤ</li>
+                <li data-value="プラチナ">プラチナ</li>
+                <li data-value="ゴールド">ゴールド</li>
+            </ul>
+            <input type="hidden" name="changeme" />
+        </div>
+        <div id="diamond_rapper">
             <div class="rank_rapper_pa">
                 <div class="rank_rapper">
                     <img src="images/R-指定.png" alt="R指定">
@@ -90,43 +100,84 @@
                 </div>
             </div>
         </div>
+
+        <div id="platinum_rapper" style="display:none">
+            <div class="rank_rapper_pa">
+                <div class="rank_rapper">
+                    <img width="140px" src="images/T-pablow.png" alt="T-pablow">
+                    <p class="rank_name_rapper">T-pablow</p>
+                    <p class="rank_point_rapper">5000 pt</p>
+                </div>
+                <div class="rank_rapper">
+                    <img width="140px" src="images/AKLO.png" alt="AKLO">
+                    <p class="rank_name_rapper">AKLO</p>
+                    <p class="rank_point_rapper">4500 pt</p>
+                </div>
+                <div class="rank_rapper">
+                    <img width="140px" src="images/YZERR.png" alt="YZERR">
+                    <p class="rank_name_rapper">YZERR</p>
+                    <p class="rank_point_rapper">3800 pt</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="gold_rapper" style="display:none">
+            <div class="rank_rapper_pa">
+                <div class="rank_rapper">
+                    <img width="140px" src="images/CYBER RUI.png" alt="CYBER RUI">
+                    <p class="rank_name_rapper">CYBER RUI</p>
+                    <p class="rank_point_rapper">3500 pt</p>
+                </div>
+                <div class="rank_rapper">
+                    <img width="140px" src="images/TAKABO.png" alt="TAKABO">
+                    <p class="rank_name_rapper">TAKABO</p>
+                    <p class="rank_point_rapper">3000 pt</p>
+                </div>
+                <div class="rank_rapper">
+                    <img width="140px" src="images/reichi.png" alt="reichi">
+                    <p class="rank_name_rapper">reichi</p>
+                    <p class="rank_point_rapper">2500 pt</p>
+                </div>
+            </div>
+        </div>
+
         <div>
             <p class="tag_text">#おすすめ</p>
             <div class="video_rapper_pa">
                 <div class="video_rapper">
-                    <img src="images/R-指定_動画.png" alt="R-指定">
+                    <img class="video_home" src="images/R-指定_動画.png" alt="R-指定">
                     <img class="mini_icon" src="images/R-指定_icon_mini.png" alt="R-指定">
                 </div>
                 <div class="video_rapper">
-                    <img src="images/T-pablow_動画.png" alt="T-pablow">
+                    <img class="video_home" src="images/T-pablow_動画.png" alt="T-pablow">
                     <img class="mini_icon" src="images/T-pablow_icon_mini.png" alt="T-pablow">
                 </div>
                 <div class="video_rapper">
-                    <img src="images/Awich_動画.png" alt="Awich">
+                    <img class="video_home" src="images/Awich_動画.png" alt="Awich">
                     <img class="mini_icon" src="images/Awich_icon_mini.png" alt="Awich">
                 </div>
                 <div class="video_rapper">
-                    <img src="images/R-指定_動画.png" alt="R-指定">
+                    <img class="video_home" src="images/R-指定_動画.png" alt="R-指定">
                     <img class="mini_icon" src="images/R-指定_icon_mini.png" alt="R-指定">
                 </div>
                 <div class="video_rapper">
-                    <img src="images/T-pablow_動画.png" alt="T-pablow">
+                    <img class="video_home" src="images/T-pablow_動画.png" alt="T-pablow">
                     <img class="mini_icon" src="images/T-pablow_icon_mini.png" alt="T-pablow">
                 </div>
                 <div class="video_rapper">
-                    <img src="images/Awich_動画.png" alt="Awich">
+                    <img class="video_home" src="images/Awich_動画.png" alt="Awich">
                     <img class="mini_icon" src="images/Awich_icon_mini.png" alt="Awich">
                 </div>
                 <div class="video_rapper">
-                    <img src="images/R-指定_動画.png" alt="R-指定">
+                    <img class="video_home" src="images/R-指定_動画.png" alt="R-指定">
                     <img class="mini_icon" src="images/R-指定_icon_mini.png" alt="R-指定">
                 </div>
                 <div class="video_rapper">
-                    <img src="images/T-pablow_動画.png" alt="T-pablow">
+                    <img class="video_home" src="images/T-pablow_動画.png" alt="T-pablow">
                     <img class="mini_icon" src="images/T-pablow_icon_mini.png" alt="T-pablow">
                 </div>
                 <div class="video_rapper">
-                    <img src="images/Awich_動画.png" alt="Awich">
+                    <img class="video_home" src="images/Awich_動画.png" alt="Awich">
                     <img class="mini_icon" src="images/Awich_icon_mini.png" alt="Awich">
                 </div>
             </div>
@@ -135,16 +186,38 @@
             <p class="tag_text">#フリースタイル</p>
             <div class="video_rapper_pa">
                 <div class="video_rapper">
-                    <img src="images/R-指定_動画.png" alt="R-指定">
+                    <img class="video_home" src="images/CYBER RUI_動画.png" alt="CYBER RUI">
+                    <img class="mini_icon" src="images/CYBER RUI_icon_mini.png" alt="CYBER RUI">
                 </div>
                 <div class="video_rapper">
-                    <img src="images/T-pablow_動画.png" alt="T-pablow">
+                    <img class="video_home" src="images/reichi_動画.png" alt="reichi">
+                    <img class="mini_icon" src="images/reichi_icon_mini.png" alt="reichi">
                 </div>
                 <div class="video_rapper">
-                    <img src="images/Awich_動画.png" alt="Awich">
+                    <img class="video_home" src="images/Awich_動画.png" alt="Awich">
+                    <img class="mini_icon" src="images/Awich_icon_mini.png" alt="Awich">
                 </div>
             </div>
         </div>
+
+        <div>
+            <p class="tag_text">#Live</p>
+            <div class="video_rapper_pa">
+                <div class="video_rapper">
+                    <img class="video_home" src="images/TAKABO_動画.png" alt="TAKABO">
+                    <img class="mini_icon" src="images/TAKABO_icon_mini.png" alt="TAKABO">
+                </div>
+                <div class="video_rapper">
+                    <img class="video_home" src="images/TAKABO_動画.png" alt="TAKABO">
+                    <img class="mini_icon" src="images/TAKABO_icon_mini.png" alt="TAKABO">
+                </div>
+                <div class="video_rapper">
+                    <img class="video_home" src="images/TAKABO_動画.png" alt="TAKABO">
+                    <img class="mini_icon" src="images/TAKABO_icon_mini.png" alt="TAKABO">
+                </div>
+            </div>
+        </div>
+
         <div class="bottom_space">
         </div>
     </main>

@@ -1,46 +1,50 @@
-main{
+main {
     z-index: -1;
-    display:block;
+    display: block;
     position: absolute;
     width: 90vw;
     left: 0;
     right: 0;
-    margin:auto;
+    margin: auto;
 }
 
-.rank_rapper_pa{
+.rank_rapper_pa {
     display: flex;
     width: 90vw;
     height: 240px;
     overflow-x: scroll;
 }
 
-.rank_rapper_pa div{
+.rank_rapper_pa div {
     width: 40%;
     margin: 5px;
     flex-shrink: 0;
 }
 
-#Diamond_tag{
+#Diamond_tag {
     color: rgb(54, 150, 179);
 }
 
-.video_rapper_pa{
+.video_rapper_pa {
     display: flex;
     width: 90vw;
     height: 298px;
     overflow-x: scroll;
 }
 
-.video_rapper_pa div{
+.video_rapper_pa div {
     width: 40%;
     margin: 5px;
     flex-shrink: 0;
 }
 
-.mini_icon{
+.mini_icon {
     position: relative;
     left: 46px;
     bottom: 30px;
     width: 12vw;
+}
+
+.video_home {
+    width: 135px;
 }
