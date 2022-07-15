@@ -1,0 +1,14 @@
+#free_style_img {
+    width: 90vw;
+}
+
+.search_mini_img{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    top: -4px;
+}
+
+.search_mini_img > img{
+    width: 45vw;
+}
