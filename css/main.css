@@ -2,21 +2,20 @@ main {
     z-index: -1;
     display: block;
     position: absolute;
-    width: 90vw;
+    width: 100vw;
     left: 0;
     right: 0;
-    margin: auto;
 }
 
 .rank_rapper_pa {
     display: flex;
-    width: 90vw;
+    width: 95vw;
     height: 240px;
     overflow-x: scroll;
+    margin: 10px 10px 0px 10px;
 }
 
 .rank_rapper_pa div {
-    width: 40%;
     margin: 5px;
     flex-shrink: 0;
 }
@@ -27,9 +26,9 @@ main {
 
 .video_rapper_pa {
     display: flex;
-    width: 90vw;
-    height: 298px;
+    width: 94.5vw;
     overflow-x: scroll;
+    margin: 10px 10px 0px 10px;
 }
 
 .video_rapper_pa div {
@@ -46,7 +45,8 @@ main {
 }
 
 .video_home {
-    width: 135px;
+    width: 39vw;
+    border-radius: 15px;
 }
 
 .nav_item {

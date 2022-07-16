@@ -4,6 +4,8 @@ $(function () {
         var height = $("header").height();
         console.log(height);
         $("main").css("margin-top", height + 18);
+        // 全画面表示
+        element.requestFullscreen();
     }
 });
 
@@ -23,23 +25,23 @@ $('.select').on('click', '.placeholder', function () {
     parent.find('input[type=hidden]').attr('value', $(this).attr('data-value'));
     console.log($(this).attr('data-value'));
     let diamond = document.getElementById('diamond_rapper');
-    if($(this).attr('data-value')==='ダイヤ'){
+    if ($(this).attr('data-value') === 'ダイヤ') {
         diamond.style.display = 'block';
-    }else{
+    } else {
         diamond.style.display = 'none';
     }
 
     let platinum = document.getElementById('platinum_rapper');
-    if($(this).attr('data-value')==='プラチナ'){
+    if ($(this).attr('data-value') === 'プラチナ') {
         platinum.style.display = 'block';
-    }else{
+    } else {
         platinum.style.display = 'none';
     }
 
     let gold = document.getElementById('gold_rapper');
-    if($(this).attr('data-value')==='ゴールド'){
+    if ($(this).attr('data-value') === 'ゴールド') {
         gold.style.display = 'block';
-    }else{
+    } else {
         gold.style.display = 'none';
     }
 });

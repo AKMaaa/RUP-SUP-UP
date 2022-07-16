@@ -1,7 +1,87 @@
-.prof_head > img{
-    width: 26vw;
+#prof_img {
+    position: relative;
+    top: 1.2vw;
+    width: 24vw;
+    margin-right: -4.5vw;
+    margin-left: 5vw;
 }
 
-#prof_name{
-    font-size:20px;
+#prof_name {
+    font-size: 7vw;
+    margin: 0;
+    font-weight: bold;
+}
+
+.prof_head {
+    display: flex;
+    margin-top: 12px;
+    height: 29vw;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    border-bottom: 0.5px solid #707070;
+}
+
+
+.prof_follow_data {
+    display: flex;
+    margin-top: 10.5px;
+}
+
+
+.prof_head_text_color>p {
+    white-space: nowrap;
+    margin: 0;
+    color: #707070;
+    letter-spacing: -1px;
+}
+
+.follow_text {
+    position: relative;
+    top: 3px;
+    font-size: 3vw;
+}
+
+.follow_num {
+    font-size: 4.6vw;
+}
+
+.follow_btn {
+    position: relative;
+    top: 8px;
+    display: flex;
+    margin-bottom: 11.5vw;
+    padding: 3px 7px 3px 7px;
+    border: 0.5px solid #707070;
+    border-radius: 10px;
+}
+
+.follow_btn>p {
+    white-space: nowrap;
+    font-size: 3vw;
+    margin: 0;
+    color: #707070;
+    letter-spacing: -1px;
+    margin-right: 6px;
+}
+
+.follow_btn>img {
+    position: relative;
+    width: 10px;
+    height: 7px;
+    top: 5px;
+}
+
+#sns_other {
+    margin-right: 5vw;
+}
+
+
+.prof_comments>p {
+    color: #707070;
+    margin: 10px 4vw;
+    font-size: 14px;
+}
+
+.prof_comments {
+    border-bottom: 0.5px solid #707070;
 }

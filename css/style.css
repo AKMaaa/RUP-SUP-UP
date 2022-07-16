@@ -11,6 +11,8 @@ p {
     border-radius: 15px;
     padding: 5px 10px;
     display: inline-block;
+    margin: 0px 0px 0px 10px;
+    font-size: 11px;
 }
 
 .rank_rapper>p {

@@ -42,10 +42,12 @@
     display: block;
     background-color: #393d41;
     z-index: 1;
-    padding: 0.5em;
-    border-radius: 10px;
+    padding: 2px 4px 2px 10px;
+    border-radius: 15px;
     cursor: pointer;
-    margin: 30px 0px 10px 0px;
+    margin: 30px 0px 10px 10px;
+    font-size:11px;
+    width: 18vw;
 }
 
 .select .placeholder:hover {
@@ -55,7 +57,7 @@
 .select .placeholder:after {
     position: absolute;
     right: 1em;
-    top: 50%;
+    top: 45%;
     transform: translateY(-50%);
     font-family: "FontAwesome";
     content: "";

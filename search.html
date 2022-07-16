@@ -22,7 +22,7 @@
     <header>
         <div class="flex_head">
             <div id="back">
-                <img src="images/back.svg" alt="戻るボタン">
+                <a href="#" onclick="window.history.back(); return false;"><img src="images/back.svg" alt="戻るボタン"></a>
             </div>
             <!-- ハンバーガーメニュー部分 -->
             <div class="nav">
@@ -33,17 +33,35 @@
                 <label for="drawer_input" class="drawer_open"><span></span></label>
 
                 <!-- メニュー -->
+                <!-- メニュー -->
                 <nav class="nav_content">
                     <ul class="nav_list">
-                        <li class="nav_item"><a href="">メニュー1</a></li>
-                        <li class="nav_item"><a href="">メニュー2</a></li>
-                        <li class="nav_item"><a href="">メニュー3</a></li>
+                        <li class="nav_item" id="movie_hist">
+                            <img src="images/視聴履歴.png" alt="">
+                            <a href="">視聴履歴</a>
+                        </li>
+                        <li class="nav_item">
+                            <img src="images/保存した動画.png" alt="">
+                            <a href="">保存した動画</a>
+                        </li>
+                        <li class="nav_item">
+                            <img src="images/設定.png" alt="">
+                            <a href="">設定</a>
+                        </li>
+                        <li class="nav_item">
+                            <img src="images/ランキング.png" alt="">
+                            <a href="">ランキング</a>
+                        </li>
+                        <li class="nav_item">
+                            <img src="images/利用規約.png" alt="">
+                            <a href="">利用規約</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
         </div>
         <div id="search_window">
-            <img src="images/検索窓.svg" alt="検索窓">
+            <a href="search.html"><img src="images/検索窓.svg" alt="検索窓"></a>
         </div>
     </header>
     <div class="UI_bottom">
@@ -67,6 +85,8 @@
             <img src="images/おすすめ_検索.png" alt="#おすすめ">
             <img src="images/reichi_検索.png" alt="#tokyo">
             <img src="images/live_検索.png" alt="#Live">
+        </div>
+        <div class="bottom_space">
         </div>
     </main>
     <script type="text/javascript" src="script/script.js"></script>

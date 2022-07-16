@@ -90,11 +90,12 @@ header {
     list-style: none;
 }
 
-.flex_head{
+.flex_head {
     display: flex;
 }
 
-#back > img{
+
+#back>img {
     height: 8vw;
     width: 8vw;
     justify-content: center;
@@ -103,19 +104,19 @@ header {
     cursor: pointer;
 }
 
-#back{
-    margin-left: 5vw;
+#back {
+    margin-left: 3.6vw;
     margin-top: 6vw;
 }
 
-.nav{
+.nav {
     margin-left: auto;
-    margin-right: 5vw;
+    margin-right: 2.5vw;
     margin-top: 5vw;
 }
 
-#search_window > img{
+#search_window>a>img {
     display: block;
-    width: 90vw;
-    margin: 4vw auto;
+    width: 93.8vw;
+    margin: 4vw 3.6vw 4vw 3.6vw;
 }
