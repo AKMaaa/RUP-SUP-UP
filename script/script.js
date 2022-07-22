@@ -2,7 +2,7 @@ $(function () {
     window.onload = () => {
 
         var height = $("header").height();
-        console.log(height);
+        //console.log(height);
         $("main").css("margin-top", height + 18);
         // 全画面表示
         element.requestFullscreen();
@@ -45,3 +45,21 @@ $('.select').on('click', '.placeholder', function () {
         gold.style.display = 'none';
     }
 });
+
+var first_height=0;
+var second_height=0;
+
+window.addEventListener("load", () => {
+    let elem = document.getElementById("ui_bottom");
+    let wh = window.innerHeight;
+    first_height=wh;
+    elem.style.top = wh-80 + "px";
+}, false);
+
+window.addEventListener("resize", () => {
+    let elem = document.getElementById("ui_bottom");
+    let wh = window.innerHeight;
+    second_height=wh;
+    console.log(second_height);
+    elem.style.top = wh-80 + "px";
+}, false);
