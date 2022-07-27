@@ -3,7 +3,7 @@ $(function () {
 
         var height = $("header").height();
         //console.log(height);
-        $("main").css("margin-top", height+18);
+        $("main").css("margin-top", height + 18);
         // 全画面表示
     }
 });

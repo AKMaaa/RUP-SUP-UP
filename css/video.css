@@ -1,21 +1,3 @@
-.wrapper {
-    position: relative;
-    overflow-x: hidden;
-    max-width: 100vw;
-}
-
-.video-btn {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 40px;
-    /*コントローラー分下部に余白を*/
-    cursor: pointer;
-    z-index: 500;
-}
-
 #video01 {
     position: relative;
     height: 100vh;
@@ -24,19 +6,49 @@
 
 #video02 {
     position: relative;
-    height: 102vh;
+    height: 100vh;
     left: -500px;
 }
 
 #video03 {
     position: relative;
-    height: 102vh;
+    height: 100vh;
     left: -500px;
 }
 
 #video04 {
     position: relative;
-    height: 102vh;
+    height: 100vh;
+    left: -500px;
+}
+
+#video05 {
+    position: relative;
+    height: 100vh;
+    left: -500px;
+}
+
+#video06 {
+    position: relative;
+    height: 100vh;
+    left: -500px;
+}
+
+#video07 {
+    position: relative;
+    height: 100vh;
+    left: -500px;
+}
+
+#video08 {
+    position: relative;
+    height: 100vh;
+    left: -500px;
+}
+
+#video09 {
+    position: relative;
+    height: 100vh;
     left: -500px;
 }
 
