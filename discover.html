@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/head.css">
     <link rel="stylesheet" href="css/UI_bottom.css">
-    <link rel="stylesheet" href="css/prof.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/video.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
@@ -61,63 +61,19 @@
     <div class="UI_bottom" id="ui_bottom">
         <a href="news.html"><img src="images/newsw.svg" alt="通知"></a>
         <a href="search.html"><img src="images/searchw.svg" alt="いいね" width="22.37px"></a>
-        <a href="index.html"><img src="images/homek.svg" alt="ホーム"></a>
-        <a href="discover.html"><img src="images/discoverw.svg" alt="発見"></a>
+        <a href="index.html"><img src="images/homew.svg" alt="ホーム"></a>
+        <a href="discover.html"><img src="images/discoverk.svg" alt="発見"></a>
         <a href="profile_myProfile.html"><img src="images/mypagew.svg" alt="プロフィール"></a>
     </div>
     <main>
-        <div class="prof_head">
-            <div>
-                <img src="images/CYBER RUI.png" alt="CYBER RUI" id="prof_img">
-            </div>
-            <div style="margin-right: 2vw;">
-                <p id="prof_name">CYBER RUI</p>
-                <div class="prof_follow_data">
-                    <div class="prof_head_text_color" style="margin-right: 18px;">
-                        <p class="follow_text">フォロー</p>
-                        <p class="follow_num">18</p>
-                    </div>
-                    <div class="prof_head_text_color">
-                        <p class="follow_text">フォロワー</p>
-                        <p class="follow_num">10.2K</p>
-                    </div>
-                </div>
-            </div>
-            <div class="prof_head_text_color" id="sns_other">
-                <div class="follow_btn">
-                    <p>フォロー中</p>
-                    <img src="images/check.png" alt="チェック">
-                </div>
-                <a href="https://twitter.com/cyber_rui8?s=20&t=Fkh-eJBh3sbo-9PnMpToxA" target="_blank"><img
-                        src="images/twitter.png" alt="twitterのリンク" style="margin-right:5px;"></a>
-                <a href="https://www.instagram.com/cyber_rui8/" target="_blank"><img src="images/instagram.png"
-                        alt="instagramのリンク"></a>
-            </div>
-        </div>
-        <div class="prof_comments">
-            <p>6.15 New single comming up soon…
-                <br>
-                Booking▶️ cyberbookings8@gmail.com
-            </p>
-        </div>
-        <div class="prof_sort">
-            <p style="position:relative;margin:20px 0px 0px 0px;left:3vw;">新しい順&nbsp;&nbsp;&nbsp;></p>
-            <p style="position:relative;margin:20px 0px 0px 0px;left:51vw;">並べ替え</p>
-        </div>
-        <div class="prof_video_container">
-            <img src="images/cyberrui_video_prof01.png" alt="cyberruiの動画" id="prof_v01">
-            <div class="prof_video_child_container">
-                <img src="images/cyberrui_video_prof02.png" alt="cyberruiの動画" id="prof_v02">
-                <img src="images/cyberrui_video_prof03.png" alt="cyberruiの動画" id="prof_v03">
-                <img src="images/cyberrui_video_prof02.png" alt="cyberruiの動画" id="prof_v02">
-                <img src="images/cyberrui_video_prof03.png" alt="cyberruiの動画" id="prof_v03">
-                <img src="images/cyberrui_video_prof02.png" alt="cyberruiの動画" id="prof_v02">
-                <img src="images/cyberrui_video_prof03.png" alt="cyberruiの動画" id="prof_v03">
-                <img src="images/cyberrui_video_prof02.png" alt="cyberruiの動画" id="prof_v02">
-                <img src="images/cyberrui_video_prof03.png" alt="cyberruiの動画" id="prof_v03">
-            </div>
-        </div>
-        <div class="bottom_space">
+        <div class="wrapper">
+        <video id="video01" autoplay loop>
+            <source src="video/R指定01.mp4" type="video/mp4">
+        </video>
+        <div class="video-btn" id="video-btn"></div>
+        <!-- <video id="video" autoplay loop>
+            <source src="video/AKLO01.mp4" type="video/mp4">
+        </video> -->
         </div>
     </main>
     <script type="text/javascript" src="script/script.js"></script>
