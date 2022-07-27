@@ -3,9 +3,8 @@ $(function () {
 
         var height = $("header").height();
         //console.log(height);
-        $("main").css("margin-top", height + 8);
+        $("main").css("margin-top", height);
         // 全画面表示
-        element.requestFullscreen();
     }
 });
 
@@ -56,25 +55,52 @@ window.addEventListener("load", () => {
     elem.style.top = wh - 80 + "px";
 }, false);
 
-window.addEventListener("resize", () => {
+setInterval(function () {
     let elem = document.getElementById("ui_bottom");
     let wh = window.innerHeight;
     second_height = wh;
-    console.log(second_height);
+    //console.log(second_height);
     elem.style.top = wh - 80 + "px";
-}, false);
+},200);
 
-const video = document.querySelector('#video01');
-const video_btn = document.querySelector('#video-btn');
-let is_playing = false;
+/*動画 タップによる再生と停止*/
+const video01 = document.querySelector('#video01');
+let is_playing01 = false;
 
-video_btn.addEventListener('click', () => {
-    if (!is_playing) {
-        video.play();
-        is_playing = true;
+video01.addEventListener('click', () => {
+    if (!is_playing01) {
+        video01.play();
+        is_playing01 = true;
     } else {
-        video.pause();
-        is_playing = false;
+        video01.pause();
+        is_playing01 = false;
     }
 });
 
+const video02 = document.querySelector('#video02');
+let is_playing02 = false;
+
+video02.addEventListener('click', () => {
+    if (!is_playing02) {
+        video02.play();
+        is_playing02 = true;
+    } else {
+        video02.pause();
+        is_playing02 = false;
+    }
+});
+
+
+/*動画位置座標による音声処理*/
+var targetElement = document.getElementById("video01");
+
+setInterval(function () {
+    var clientRect = targetElement.getBoundingClientRect();
+
+    // 画面内の位置
+    var y = clientRect.top;
+
+    // ページ内の位置
+    var py = window.pageYOffset + clientRect.top;
+    console.log(y)
+}, 200 );
