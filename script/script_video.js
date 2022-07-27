@@ -1,13 +1,3 @@
-$(function () {
-    window.onload = () => {
-
-        var height = $("header").height();
-        //console.log(height);
-        $("main").css("margin-top", height);
-        // 全画面表示
-    }
-});
-
 var first_height = 0;
 var second_height = 0;
 
