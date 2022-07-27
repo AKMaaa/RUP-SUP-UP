@@ -3,7 +3,7 @@ $(function () {
 
         var height = $("header").height();
         //console.log(height);
-        $("main").css("margin-top", height + 18);
+        $("main").css("margin-top", height + 8);
         // 全画面表示
         element.requestFullscreen();
     }
@@ -46,20 +46,35 @@ $('.select').on('click', '.placeholder', function () {
     }
 });
 
-var first_height=0;
-var second_height=0;
+var first_height = 0;
+var second_height = 0;
 
 window.addEventListener("load", () => {
     let elem = document.getElementById("ui_bottom");
     let wh = window.innerHeight;
-    first_height=wh;
-    elem.style.top = wh-80 + "px";
+    first_height = wh;
+    elem.style.top = wh - 80 + "px";
 }, false);
 
 window.addEventListener("resize", () => {
     let elem = document.getElementById("ui_bottom");
     let wh = window.innerHeight;
-    second_height=wh;
+    second_height = wh;
     console.log(second_height);
-    elem.style.top = wh-80 + "px";
+    elem.style.top = wh - 80 + "px";
 }, false);
+
+const video = document.querySelector('#video01');
+const video_btn = document.querySelector('#video-btn');
+let is_playing = false;
+
+video_btn.addEventListener('click', () => {
+    if (!is_playing) {
+        video.play();
+        is_playing = true;
+    } else {
+        video.pause();
+        is_playing = false;
+    }
+});
+
