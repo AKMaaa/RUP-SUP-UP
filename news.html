@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="japanese">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2.3.0/dist/flickity.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/head.css">
+    <link rel="stylesheet" href="css/UI_bottom.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/tutorial.css">
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <title>HI演習 G6</title>
+</head>
+
+<body>
+    <header>
+        <div class="flex_head">
+            <div id="back">
+                <a href="#" onclick="window.history.back(); return false;"><img src="images/back.svg" alt="戻るボタン"></a>
+            </div>
+            <!-- ハンバーガーメニュー部分 -->
+            <div class="nav">
+                <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+                <input id="drawer_input" class="drawer_hidden" type="checkbox">
+
+                <!-- ハンバーガーアイコン -->
+                <label for="drawer_input" class="drawer_open"><span></span></label>
+                <nav class="nav_content">
+                    <ul class="nav_list">
+                        <li class="nav_item" id="movie_hist">
+                            <img src="images/視聴履歴.png" alt="">
+                            <a href="">視聴履歴</a>
+                        </li>
+                        <li class="nav_item">
+                            <img src="images/保存した動画.png" alt="">
+                            <a href="">保存した動画</a>
+                        </li>
+                        <li class="nav_item">
+                            <img src="images/設定.png" alt="">
+                            <a href="">設定</a>
+                        </li>
+                        <li class="nav_item">
+                            <img src="images/ランキング.png" alt="">
+                            <a href="">ランキング</a>
+                        </li>
+                        <li class="nav_item">
+                            <img src="images/利用規約.png" alt="">
+                            <a href="">利用規約</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="UI_bottom" id="ui_bottom">
+        <a href="news.html"><img src="images/newsk.svg" alt="通知"></a>
+        <a href="search.html"><img src="images/searchw.svg" alt="いいね" width="22.37px"></a>
+        <a href="index.html"><img src="images/homew.svg" alt="ホーム"></a>
+        <a href="discover.html"><img src="images/discoverw.svg" alt="発見"></a>
+        <a href="profile_myProfile.html"><img src="images/mypagew.svg" alt="プロフィール"></a>
+    </div>
+    <main>
+        <img src="images/up_sc.svg" alt="上" id="up_sc">
+            <div id="news_container02">
+                <div class="news_title">
+                    <p class="news_t">ver1.1をリリースしました</p>
+                    <p class="news_date">2022.06.24&nbsp;&nbsp;&nbsp;></p>
+                </div>
+                <div class="news_title">
+                    <p class="news_t">ver1.01をリリースしました</p>
+                    <p class="news_date">2022.02.22&nbsp;&nbsp;&nbsp;></p>
+                </div>
+                <div class="news_title">
+                    <img src="images/R-指定_icon_mini.png" alt="R指定" id="news_timg">
+                    <p class="news_t">R指定が動画を投稿しま..</p>
+                    <p class="news_date">2022.06.24&nbsp;&nbsp;&nbsp;></p>
+                </div>
+                <div class="news_title">
+                    <p class="news_t">ver1.1をリリースしました</p>
+                    <p class="news_date">2022.06.24&nbsp;&nbsp;&nbsp;></p>
+                </div>
+                <div class="news_title">
+                    <p class="news_t">ver1.01をリリースしました</p>
+                    <p class="news_date">2022.02.22&nbsp;&nbsp;&nbsp;></p>
+                </div>
+                <div class="news_title">
+                    <img src="images/R-指定_icon_mini.png" alt="R指定" id="news_timg">
+                    <p class="news_t">R指定が動画を投稿しま..</p>
+                    <p class="news_date">2022.06.24&nbsp;&nbsp;&nbsp;></p>
+                </div>
+                <div class="news_title">
+                    <p class="news_t">ver1.1をリリースしました</p>
+                    <p class="news_date">2022.06.24&nbsp;&nbsp;&nbsp;></p>
+                </div>
+                <div class="news_title">
+                    <p class="news_t">ver1.01をリリースしました</p>
+                    <p class="news_date">2022.02.22&nbsp;&nbsp;&nbsp;></p>
+                </div>
+                <div class="news_title">
+                    <img src="images/R-指定_icon_mini.png" alt="R指定" id="news_timg">
+                    <p class="news_t">R指定が動画を投稿しま..</p>
+                    <p class="news_date">2022.06.24&nbsp;&nbsp;&nbsp;></p>
+                </div>
+                <div class="news_title">
+                    <p class="news_t">ver1.1をリリースしました</p>
+                    <p class="news_date">2022.06.24&nbsp;&nbsp;&nbsp;></p>
+                </div>
+                <div class="news_title">
+                    <p class="news_t">ver1.01をリリースしました</p>
+                    <p class="news_date">2022.02.22&nbsp;&nbsp;&nbsp;></p>
+                </div>
+                <div class="news_title">
+                    <img src="images/R-指定_icon_mini.png" alt="R指定" id="news_timg">
+                    <p class="news_t">R指定が動画を投稿しま..</p>
+                    <p class="news_date">2022.06.24&nbsp;&nbsp;&nbsp;></p>
+                </div>
+                <div class="news_title">
+                    <p class="news_t">ver1.1をリリースしました</p>
+                    <p class="news_date">2022.06.24&nbsp;&nbsp;&nbsp;></p>
+                </div>
+                <div class="news_title">
+                    <p class="news_t">ver1.01をリリースしました</p>
+                    <p class="news_date">2022.02.22&nbsp;&nbsp;&nbsp;></p>
+                </div>
+                <div class="news_title">
+                    <img src="images/R-指定_icon_mini.png" alt="R指定" id="news_timg">
+                    <p class="news_t">R指定が動画を投稿しま..</p>
+                    <p class="news_date">2022.06.24&nbsp;&nbsp;&nbsp;></p>
+                </div>
+                <div class="news_title">
+                    <p class="news_t">ver1.1をリリースしました</p>
+                    <p class="news_date">2022.06.24&nbsp;&nbsp;&nbsp;></p>
+                </div>
+                <div class="news_title">
+                    <p class="news_t">ver1.01をリリースしました</p>
+                    <p class="news_date">2022.02.22&nbsp;&nbsp;&nbsp;></p>
+                </div>
+                <div class="news_title">
+                    <img src="images/R-指定_icon_mini.png" alt="R指定" id="news_timg">
+                    <p class="news_t">R指定が動画を投稿しま..</p>
+                    <p class="news_date">2022.06.24&nbsp;&nbsp;&nbsp;></p>
+                </div>
+                <div class="news_title">
+                    <p class="news_t">ver1.1をリリースしました</p>
+                    <p class="news_date">2022.06.24&nbsp;&nbsp;&nbsp;></p>
+                </div>
+                <div class="news_title">
+                    <p class="news_t">ver1.01をリリースしました</p>
+                    <p class="news_date">2022.02.22&nbsp;&nbsp;&nbsp;></p>
+                </div>
+                <div class="news_title">
+                    <img src="images/R-指定_icon_mini.png" alt="R指定" id="news_timg">
+                    <p class="news_t">R指定が動画を投稿しま..</p>
+                    <p class="news_date">2022.06.24&nbsp;&nbsp;&nbsp;></p>
+                </div>
+                <div class="news_title">
+                    <p class="news_t">ver1.1をリリースしました</p>
+                    <p class="news_date">2022.06.24&nbsp;&nbsp;&nbsp;></p>
+                </div>
+                <div class="news_title">
+                    <p class="news_t">ver1.01をリリースしました</p>
+                    <p class="news_date">2022.02.22&nbsp;&nbsp;&nbsp;></p>
+                </div>
+                <div class="news_title">
+                    <img src="images/R-指定_icon_mini.png" alt="R指定" id="news_timg">
+                    <p class="news_t">R指定が動画を投稿しま..</p>
+                    <p class="news_date">2022.06.24&nbsp;&nbsp;&nbsp;></p>
+                </div>
+            </div>
+        <img src="images/down_sc.svg" alt="下" id="down_sc">
+        <div class="bottom_space">
+        </div>
+    </main>
+    <script type="text/javascript" src="script/script.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/flickity@2.3.0/dist/flickity.pkgd.min.js"></script>
+</body>
+
+</html>

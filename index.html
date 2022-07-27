@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2.3.0/dist/flickity.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/head.css">
     <link rel="stylesheet" href="css/UI_bottom.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/tutorial.css">
+    <link rel="stylesheet" href="css/news.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
@@ -29,16 +32,6 @@
 
                 <!-- ハンバーガーアイコン -->
                 <label for="drawer_input" class="drawer_open"><span></span></label>
-
-                <!-- メニュー
-                <nav class="nav_content">
-                    <ul class="nav_list">
-                        <li class="nav_item"><a href="">メニュー1</a></li>
-                        <li class="nav_item"><a href="">メニュー2</a></li>
-                        <li class="nav_item"><a href="">メニュー3</a></li>
-                    </ul>
-                </nav> -->
-                <!-- メニュー -->
                 <nav class="nav_content">
                     <ul class="nav_list">
                         <li class="nav_item" id="movie_hist">
@@ -66,12 +59,43 @@
             </div>
         </div>
     </header>
+
+
+    <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }' id="tutorial">
+        <div class="gallery-cell"><img src="images/tu01.png" alt="チュートリアル01"></div>
+        <div class="gallery-cell"><img src="images/tu02.png" alt="チュートリアル02"></div>
+        <div class="gallery-cell"><img src="images/tu03.png" alt="チュートリアル03"></div>
+        <div class="gallery-cell"><img src="images/tu04.png" alt="チュートリアル04"></div>
+    </div>
+
     <div class="UI_bottom" id="ui_bottom">
-        <a href="news.html"><img src="images/newsw.svg" alt="通知"></a>
+        <a id="news_icon"><img src="images/newsw.svg" alt="通知"></a>
         <a href="search.html"><img src="images/searchw.svg" alt="いいね" width="22.37px"></a>
         <a href="index.html"><img src="images/homek.svg" alt="ホーム"></a>
         <a href="discover.html"><img src="images/discoverw.svg" alt="発見"></a>
         <a href="profile_myProfile.html"><img src="images/mypagew.svg" alt="プロフィール"></a>
+    </div>
+    <div id="news_container">
+        <img src="images/✕.svg" alt="✕" id="back_home">
+        <div class="news_title">
+            <p class="news_t">ver1.1をリリースしました</p>
+            <p class="news_date">2022.06.24&nbsp;&nbsp;&nbsp;></p>
+        </div>
+        <div class="news_title">
+            <p class="news_t">ver1.01をリリースしました</p>
+            <p class="news_date">2022.02.22&nbsp;&nbsp;&nbsp;></p>
+        </div>
+        <div class="news_title">
+            <img src="images/R-指定_icon_mini.png" alt="R指定" id="news_timg">
+            <p class="news_t">R指定が動画を投稿しま..</p>
+            <p class="news_date">2022.06.24&nbsp;&nbsp;&nbsp;></p>
+        </div>
+        <a href="news.html">
+            <div class="more_news">
+                <img src="images/プラス.svg" alt="プラスボタン">
+                <p id="more_news_lead">更に表示する</p>
+            </div>
+        </a>
     </div>
     <main>
         <p class="tag_text">応援しているラッパー</p>
@@ -172,11 +196,13 @@
                 </div>
                 <div class="video_rapper">
                     <img class="video_home" src="images/T-pablow_動画.png" alt="T-pablow">
-                    <a href="profile_T-pablow.html"><img class="mini_icon" src="images/T-pablow_icon_mini.png" alt="T-pablow"></a>
+                    <a href="profile_T-pablow.html"><img class="mini_icon" src="images/T-pablow_icon_mini.png"
+                            alt="T-pablow"></a>
                 </div>
                 <div class="video_rapper">
                     <img class="video_home" src="images/Awich_動画.png" alt="Awich">
-                    <a href="profile_Awich.html"><img class="mini_icon" src="images/Awich_icon_mini.png" alt="Awich"></a>
+                    <a href="profile_Awich.html"><img class="mini_icon" src="images/Awich_icon_mini.png"
+                            alt="Awich"></a>
                 </div>
             </div>
         </div>
@@ -185,15 +211,18 @@
             <div class="video_rapper_pa">
                 <div class="video_rapper">
                     <img class="video_home" src="images/CYBER RUI_動画.png" alt="CYBER RUI">
-                    <a href="profile_CYBERRUI.html"><img class="mini_icon" src="images/CYBER RUI_icon_mini.png" alt="CYBER RUI"></a>
+                    <a href="profile_CYBERRUI.html"><img class="mini_icon" src="images/CYBER RUI_icon_mini.png"
+                            alt="CYBER RUI"></a>
                 </div>
                 <div class="video_rapper">
                     <img class="video_home" src="images/reichi_動画.png" alt="reichi">
-                    <a href="profile_reichi.html"><img class="mini_icon" src="images/reichi_icon_mini.png" alt="reichi"></a>
+                    <a href="profile_reichi.html"><img class="mini_icon" src="images/reichi_icon_mini.png"
+                            alt="reichi"></a>
                 </div>
                 <div class="video_rapper">
                     <img class="video_home" src="images/Awich_動画.png" alt="Awich">
-                    <a href="profile_Awich.html"><img class="mini_icon" src="images/Awich_icon_mini.png" alt="Awich"></a>
+                    <a href="profile_Awich.html"><img class="mini_icon" src="images/Awich_icon_mini.png"
+                            alt="Awich"></a>
                 </div>
             </div>
         </div>
@@ -203,15 +232,18 @@
             <div class="video_rapper_pa">
                 <div class="video_rapper">
                     <img class="video_home" src="images/takabo_動画.png" alt="TAKABO">
-                    <a href="profile_TAKABO.html"><img class="mini_icon" src="images/TAKABO_icon_mini.png" alt="TAKABO"></a>
+                    <a href="profile_TAKABO.html"><img class="mini_icon" src="images/TAKABO_icon_mini.png"
+                            alt="TAKABO"></a>
                 </div>
                 <div class="video_rapper">
                     <img class="video_home" src="images/takabo_動画.png" alt="TAKABO">
-                    <a href="profile_TAKABO.html"><img class="mini_icon" src="images/TAKABO_icon_mini.png" alt="TAKABO"></a>
+                    <a href="profile_TAKABO.html"><img class="mini_icon" src="images/TAKABO_icon_mini.png"
+                            alt="TAKABO"></a>
                 </div>
                 <div class="video_rapper">
                     <img class="video_home" src="images/takabo_動画.png" alt="TAKABO">
-                    <a href="profile_TAKABO.html"><img class="mini_icon" src="images/TAKABO_icon_mini.png" alt="TAKABO"></a>
+                    <a href="profile_TAKABO.html"><img class="mini_icon" src="images/TAKABO_icon_mini.png"
+                            alt="TAKABO"></a>
                 </div>
             </div>
         </div>
@@ -219,6 +251,18 @@
         </div>
     </main>
     <script type="text/javascript" src="script/script.js"></script>
+    <script type="text/javascript" src="script/acsess_flag.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/flickity@2.3.0/dist/flickity.pkgd.min.js"></script>
+    <script type="text/javascript">
+        document.getElementById("news_container").style.display = "none";
+        $("#news_icon").on("click", function () {
+            $("#news_container").fadeIn("slow");
+        });
+
+        $("#back_home").on("click", function () {
+            $("#news_container").fadeOut("slow");
+        });
+    </script>
 </body>
 
 </html>

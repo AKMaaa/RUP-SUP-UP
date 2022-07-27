@@ -3,7 +3,7 @@
 .UI_bottom {
     position: fixed;
     width: 90vw;
-    height: 8vh;
+    height: 62px;
     left: 0;
     right: 0;
     margin: -10px auto;
@@ -15,7 +15,7 @@
     justify-content:space-around;
     z-index: 1000;
     background: #fff;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .UI_bottom> a >img {
