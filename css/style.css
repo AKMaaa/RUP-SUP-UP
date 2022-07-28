@@ -79,3 +79,10 @@ p {
         transform: translateY(0);
     }
 }
+
+#intro_img{
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+}
