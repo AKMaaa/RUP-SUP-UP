@@ -21,14 +21,61 @@ p {
 
 .rank_name_rapper {
     font-size: 20px;
-    margin:0;
+    margin: 0;
 }
 
 .rank_point_rapper {
     font-size: 18px;
-    margin:0;
+    margin: 0;
 }
 
-.bottom_space{
+.bottom_space {
     height: 140px;
+}
+
+.img_anime_box {
+    animation-name: flipLeftAnime;
+    animation-duration: 1.8s;
+    animation-fill-mode: forwards;
+    perspective-origin: left center;
+    opacity: 0;
+}
+
+@keyframes flipLeftAnime {
+    from {
+        transform: perspective(600px) translate3d(0, 0, 0) rotateY(30deg);
+        opacity: 0;
+    }
+
+    to {
+        transform: perspective(600px) translate3d(0, 0, 0) rotateY(0deg);
+        opacity: 1;
+    }
+}
+
+.fadeUpTrigger {
+    opacity: 0;
+}
+.fadeUpTrigger2 {
+    opacity: 0;
+}
+
+
+.img_anime_box2 {
+    animation-name: fadeUpAnime;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

@@ -39,7 +39,7 @@ main {
 
 .mini_icon {
     position: relative;
-    left: 40px;
+    left: 6vw;
     bottom: 30px;
     width: 13vw;
 }
@@ -75,4 +75,37 @@ li.nav_item {
 
 #movie_hist {
     margin-top: 40px;
+}
+
+.v_3 {
+    position: relative;
+    left: 18vw;
+    bottom: 45vw;
+    width: 6vw;
+}
+
+.video_ser {
+    width: 46vw;
+    border-radius: 15px;
+}
+
+.mini_icon2{
+    position: relative;
+    left: 10vw;
+    bottom: 30px;
+    width: 13vw;
+}
+
+.v_32 {
+    position: relative;
+    left: 21vw;
+    bottom: 48vw;
+    width: 6vw;
+}
+
+.video_rapper_pa2 {
+    display: flex;
+    width: 97.5vw;
+    overflow-x: scroll;
+    margin: 10px 10px 0px 10px;
 }

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="japanese">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/head.css">
+    <link rel="stylesheet" href="css/UI_bottom.css">
+    <link rel="stylesheet" href="css/prof.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="script/animetion_img.js"></script>
+    <title>検索</title>
+</head>
+
+<body>
+    <header>
+        <div class="flex_head">
+            <div id="back">
+                <a href="#" onclick="window.history.back(); return false;"><img src="images/back.svg" alt="戻るボタン"></a>
+            </div>
+            <!-- ハンバーガーメニュー部分 -->
+            <div class="nav">
+                <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+                <input id="drawer_input" class="drawer_hidden" type="checkbox">
+
+                <!-- ハンバーガーアイコン -->
+                <label for="drawer_input" class="drawer_open"><span></span></label>
+
+                <!-- メニュー -->
+                <!-- メニュー -->
+                <nav class="nav_content">
+                    <ul class="nav_list">
+                        <li class="nav_item" id="movie_hist">
+                            <img src="images/視聴履歴.png" alt="">
+                            <a href="">視聴履歴</a>
+                        </li>
+                        <li class="nav_item">
+                            <img src="images/保存した動画.png" alt="">
+                            <a href="">保存した動画</a>
+                        </li>
+                        <li class="nav_item">
+                            <img src="images/設定.png" alt="">
+                            <a href="">設定</a>
+                        </li>
+                        <li class="nav_item">
+                            <img src="images/ランキング.png" alt="">
+                            <a href="">ランキング</a>
+                        </li>
+                        <li class="nav_item">
+                            <img src="images/利用規約.png" alt="">
+                            <a href="">利用規約</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="UI_bottom" id="ui_bottom">
+        <a href="news.html"><img src="images/newsw.svg" alt="通知"></a>
+        <a href="search.html"><img src="images/searchk.svg" alt="いいね" width="22.37px"></a>
+        <a href="index.html"><img src="images/homew.svg" alt="ホーム"></a>
+        <a href="discover.html"><img src="images/discoverw.svg" alt="発見"></a>
+        <a href="profile_myProfile.html"><img src="images/mypagew.svg" alt="プロフィール"></a>
+    </div>
+    <main>
+        <!--ここに書く！！！-->
+        <div class="prof_sort">
+            <p style="position:relative;margin:20px 0px 0px 0px;left:3vw;">新しい順&nbsp;&nbsp;&nbsp;&gt;</p>
+        </div>
+        <div>
+            <p class="tag_text">#フリースタイル</p>
+            <div class="video_rapper_pa2">
+                <div class="video_rapper fadeUpTrigger">
+                    <a href="discover02.html"><img class="video_ser" src="images/AKLO_動画.png" alt="AKLO"><img src="images02/3.png" alt="3" class="v_32"></a>
+                    <a href="profile_AKLO.html"><img class="mini_icon2" src="images/AKLO_icon_mini.png"
+                            alt="AKLO"></a>
+                </div>
+                <div class="video_rapper fadeUpTrigger">
+                    <a href="discover04.html"><img class="video_ser" src="images/IO_動画.png" alt="IO"><img src="images02/3.png" alt="3" class="v_32"></a>
+                    <a href="profile_IO.html"><img class="mini_icon2" src="images/IO_icon_mini.png"
+                            alt="IO"></a>
+                </div>
+            </div>
+            <div class="video_rapper_pa2">
+                <div class="video_rapper fadeUpTrigger">
+                    <a href="discover.html"><img class="video_ser" src="images/R-指定_動画.png" alt="R"><img src="images02/3.png" alt="3" class="v_32"></a>
+                    <a href="profile_R-8指定.html"><img class="mini_icon2" src="images/R-指定_icon_mini.png"
+                            alt="R-指定"></a>
+                </div>
+                <div class="video_rapper fadeUpTrigger">
+                    <a href="discover03.html"><img class="video_ser" src="images/Awich_動画.png" alt="IO"><img src="images02/3.png" alt="3" class="v_32"></a>
+                    <a href="profile_Awich.html"><img class="mini_icon2" src="images/Awich_icon_mini.png"
+                            alt="Awich"></a>
+                </div>
+            </div>
+            <div class="video_rapper_pa2">
+                <div class="video_rapper fadeUpTrigger">
+                    <a href="discover05.html"><img class="video_ser" src="images/CYBER RUI_動画.png" alt="R"><img src="images02/3.png" alt="3" class="v_32"></a>
+                    <a href="profile_CYBERRUI.html"><img class="mini_icon2" src="images/CYBER RUI_icon_mini.png"
+                            alt="cyberrui"></a>
+                </div>
+                <div class="video_rapper fadeUpTrigger">
+                    <a href="discover06.html"><img class="video_ser" src="images/T-pablow_動画.png" alt="IO"><img src="images02/3.png" alt="3" class="v_32"></a>
+                    <a href="profile_T-pablow.html"><img class="mini_icon2" src="images/T-pablow_icon_mini.png"
+                            alt="T-pablow"></a>
+                </div>
+            </div>
+            <div class="video_rapper_pa2">
+                <div class="video_rapper fadeUpTrigger">
+                    <a href="discover07.html"><img class="video_ser" src="images/reichi_動画.png" alt="R"><img src="images02/3.png" alt="3" class="v_32"></a>
+                    <a href="profile_reichi.html"><img class="mini_icon2" src="images/reichi_icon_mini.png"
+                            alt="reichi"></a>
+                </div>
+                <div class="video_rapper fadeUpTrigger">
+                    <a href="discover08.html"><img class="video_ser" src="images/YZERR_動画.png" alt="IO"><img src="images02/3.png" alt="3" class="v_32"></a>
+                    <a href="profile_YZERR.html"><img class="mini_icon2" src="images/YZERR_icon_mini.png"
+                            alt="YZERR"></a>
+                </div>
+            </div>
+            <div class="video_rapper_pa2">
+                <div class="video_rapper fadeUpTrigger">
+                    <a href="discover09.html"><img class="video_ser" src="images/takabo_動画.png" alt="R"><img src="images02/3.png" alt="3" class="v_32"></a>
+                    <a href="profile_TAKABO.html"><img class="mini_icon2" src="images/takabo_icon_mini.png"
+                            alt="TAKABO"></a>
+                </div>
+                <div class="video_rapper fadeUpTrigger">
+                    <a href="discover09.html"><img class="video_ser" src="images/takabo_動画.png" alt="R"><img src="images02/3.png" alt="3" class="v_32"></a>
+                    <a href="profile_TAKABO.html"><img class="mini_icon2" src="images/takabo_icon_mini.png"
+                            alt="TAKABO"></a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_space">
+        </div>
+    </main>
+    <script type="text/javascript" src="script/script.js"></script>
+    <script type="text/javascript" src="script/bottom_ui.js"></script>
+</body>
+
+</html>

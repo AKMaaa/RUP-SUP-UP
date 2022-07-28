@@ -52,27 +52,147 @@
     left: -500px;
 }
 
-.aside_UI{
+.aside_UI {
     position: relative;
     height: 0px;
     top: -74vh;
     left: 86vw;
 }
-.aside_UI > img{
-    width:9vw;
+
+.aside_UI>img {
+    width: 9vw;
     margin-bottom: 2vh;
 }
 
-#aside_icon{
+#aside_icon {
     position: relative;
     width: 12vw;
     left: -1vw;
     margin-bottom: 4vh;
 }
 
-#tag{
+#tag {
     position: relative;
     width: 18vw;
     top: -5.575vh;
-    left:-81vw;
+    left: -81vw;
+}
+
+/*応援バナー関係のcss*/
+
+#ba_y {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 80%;
+    margin: 30px auto;
+    animation: come-down-anim 0.8s ease-in;
+    opacity: 0.8;
+}
+
+#ba_r {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 80%;
+    margin: 30px auto;
+    animation: come-down-anim 0.8s ease-in;
+    opacity: 0.8;
+}
+
+#ba_re {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 80%;
+    margin: 30px auto;
+    animation: come-down-anim 0.8s ease-in;
+    opacity: 0.8;
+}
+
+
+#ba_ak {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 80%;
+    margin: 30px auto;
+    animation: come-down-anim 0.8s ease-in;
+    opacity: 0.8;
+}
+
+#ba_aw {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 80%;
+    margin: 30px auto;
+    animation: come-down-anim 0.8s ease-in;
+    opacity: 0.8;
+}
+
+#ba_ru {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 80%;
+    margin: 30px auto;
+    animation: come-down-anim 0.8s ease-in;
+    opacity: 0.8;
+}
+
+#ba_i {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 80%;
+    margin: 30px auto;
+    animation: come-down-anim 0.8s ease-in;
+    opacity: 0.8;
+}
+
+#ba_t {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 80%;
+    margin: 30px auto;
+    animation: come-down-anim 0.8s ease-in;
+    opacity: 0.8;
+}
+
+#ba_p {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 80%;
+    margin: 30px auto;
+    animation: come-down-anim 0.8s ease-in;
+    opacity: 0.8;
+}
+
+
+
+
+@keyframes come-down-anim {
+    0% {
+        transform: translateY(-100px);
+    }
+
+    100% {
+        transform: translateY(0.5vh);
+    }
+}
+
+.aside_UI>img:active{
+
 }

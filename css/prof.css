@@ -88,7 +88,7 @@
 
 .prof_sort {
     display: flex;
-    width: 90vw;
+    width: 93vw;
     border-bottom: solid 0.5px #707070;
     margin: 0px auto;
 }
@@ -112,7 +112,7 @@
     justify-content: space-between;
 }
 
-.prof_video_child_container>img {
+.prof_video_child_container>a>img {
     width: 49.43vw;
     margin-bottom: 3.8px;
 }
