@@ -9,15 +9,10 @@ if (window.innerWidth < 500) {/*スマホ時のみの処理*/
         sessionStorage.setItem(keyName, keyValue);
         //ここに初回アクセス時の処理
         console.log("初めての訪問です");
-        if(a==0){
-        location.reload();
-        a=1;
-        }
     } else {
         //ここに通常アクセス時の処理
         console.log("訪問済みです");
         document.getElementById("tutorial").style.display = "none";
-        document.getElementById("intro_img").style.display = "none";
     }
 
 }
