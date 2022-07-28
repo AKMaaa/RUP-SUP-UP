@@ -1,0 +1,48 @@
+/* external css: flickity.css */
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.gallery {
+    background: #EEE;
+}
+
+.gallery-cell {
+    width: 55%;
+    height: 49vh;
+    margin-right: 10px;
+    counter-increment: gallery-cell;
+}
+
+/* cell number */
+.gallery-cell:before {
+    display: block;
+    text-align: center;
+    /* content: counter(gallery-cell); */
+    line-height: 49vh;
+    font-size: 80px;
+    color: white;
+}
+
+.flickity-enabled.is-draggable {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding-top: 100px;
+}
+
+.gallery-cell>img{
+    height: 49vh;
+}
+
+.gallery js-flickity flickity-enabled is-draggable{
+    position: absolute;
+}

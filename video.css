@@ -1,0 +1,78 @@
+#video01 {
+    position: relative;
+    height: 100vh;
+    left: -500px;
+}
+
+#video02 {
+    position: relative;
+    height: 100vh;
+    left: -500px;
+}
+
+#video03 {
+    position: relative;
+    height: 100vh;
+    left: -500px;
+}
+
+#video04 {
+    position: relative;
+    height: 100vh;
+    left: -500px;
+}
+
+#video05 {
+    position: relative;
+    height: 100vh;
+    left: -500px;
+}
+
+#video06 {
+    position: relative;
+    height: 100vh;
+    left: -500px;
+}
+
+#video07 {
+    position: relative;
+    height: 100vh;
+    left: -500px;
+}
+
+#video08 {
+    position: relative;
+    height: 100vh;
+    left: -500px;
+}
+
+#video09 {
+    position: relative;
+    height: 100vh;
+    left: -500px;
+}
+
+.aside_UI{
+    position: relative;
+    height: 0px;
+    top: -74vh;
+    left: 86vw;
+}
+.aside_UI > img{
+    width:9vw;
+    margin-bottom: 2vh;
+}
+
+#aside_icon{
+    position: relative;
+    width: 12vw;
+    left: -1vw;
+    margin-bottom: 4vh;
+}
+
+#tag{
+    position: relative;
+    width: 18vw;
+    top: -5.575vh;
+    left:-81vw;
+}
