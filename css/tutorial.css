@@ -14,7 +14,7 @@ body {
 }
 
 .gallery-cell {
-    width: 66%;
+    width: 55%;
     height: 49vh;
     margin-right: 10px;
     counter-increment: gallery-cell;
